@@ -1,0 +1,121 @@
+.logincontainer
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logincontainer .loginform
+{
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+}
+.logincontainer .loginform #companylogo
+{
+    object-fit: contain;
+    height:30px;
+    margin:35px 0px 25px 70px;
+}
+.logincontainer .loginform #formhead
+{
+    font-weight: bolder;
+    font-size: xx-large;
+    color:#090476;
+    margin: 20px 0px 40px 70px;
+}
+.logincontainer .loginform #fieldhead
+{
+    font-size: large;
+    font-weight: bold;
+    color:#42424A;
+    margin-left: 70px;
+}
+.logincontainer .loginform .formtextbox
+{
+    border-radius: 20px;
+    width: 30vw;
+    margin: 10px 0px 30px 65px;
+    border: 1px solid lightgrey;
+    font-size: large;
+    padding: 10px 30px 10px 30px;
+}
+.logincontainer .loginform .formtextbox:focus
+{
+    outline: none;
+}
+.logincontainer .loginform #info
+{
+    color:gray;
+}
+#forgotpassword
+{
+    color:#877abc;
+}
+#forgotpassword:hover
+{
+    color:#776aba;
+    cursor: pointer;
+}
+#rememberme
+{
+    color:#42424A;
+}
+#loginbtn
+{
+    transition: 750ms;
+    margin: 0px 0px 30px 65px;
+    font-weight: bolder;
+    color:white;
+    font-size: xx-large;
+    background-color: #090476;
+    width:33vw;
+    border-radius: 25px;
+    padding:5px 10px 5px 10px;
+}
+#loginbtn:hover
+{
+    transition: 750ms;
+    background-color: #29247D;
+    cursor: pointer;
+}
+h5 {
+    overflow: hidden;
+    text-align: center;
+    color:lightgray
+}
+h5:before,h5:after {
+    background-color: lightgrey;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+h5:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h5:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+@media screen and (max-width:850px)
+{
+    .filler
+    {
+        display: none;
+    }
+    .logincontainer .loginform
+    {
+        width:100vw;
+    }
+    .logincontainer .loginform .formtextbox
+    {
+        width: 70vw;
+    }
+    #loginbtn
+    {
+        width:75vw;
+    }
+}

@@ -1,0 +1,122 @@
+.card2
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding:3vh 0vh 3vh 0vh;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.card2 div img
+{
+    object-fit: contain;
+    height: 10vh;
+    width:10vh;
+}
+.card2 div:nth-child(1)
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card2 .operations
+{
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+.card2 .operations img
+{
+    opacity: 0.6;
+}
+.card2 .operations img:hover
+{
+    opacity: 1;
+}
+.prompt
+{
+    padding:1vh 1vw 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prompt .close-prompt
+{
+    display: flex;
+    margin-left: 98%;
+    margin-bottom: 20px;
+    font-size: x-large;
+    align-items: flex-end;
+    text-align: right;
+    cursor:pointer;
+    font-weight: bolder;
+}
+.prompt .close-prompt:hover
+{
+    color:red;
+}
+.prompt .prompt-message
+{
+    font-size: x-large;
+    font-weight: bold;
+    color:#707070;
+    margin-bottom: 20px;
+}
+.prompt .prompt-options
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 67%;
+    color:rgba(49,41,210,0.51);
+    font-size: larger;
+    font-weight: bolder;
+    width:30%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.prompt .prompt-options div
+{
+    transition: 500ms;
+    cursor: pointer;
+}
+.prompt .prompt-options div:hover
+{
+    transition: 500ms;
+    color:rgba(49,41,210,0.71);
+}
+@media screen and (max-width:750px)
+{
+    .prompt .close-prompt
+    {
+        margin-left: 96%;
+    }
+    .card2
+    {
+        flex-direction: column;
+    }
+    .card2 div div img
+    {
+        height: 17vh;
+        width:17vh;
+        margin-bottom: -15vh;
+    }
+    .card2 div:nth-child(1)
+    {
+        justify-content: flex-start;
+    }
+    .expense1
+    {
+        display: flex;
+        align-self: center;
+        margin-left: 15vh;
+    }
+    .card2 .operations
+    {
+        margin-top: 5vh;
+        margin-left: 5vh;
+    }
+}

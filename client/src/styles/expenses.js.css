@@ -1,0 +1,85 @@
+.new-expense
+{
+    transition: 500ms;
+    background-color: rgba(49,41,210,0.60);
+    color:white;
+    font-weight: bolder;
+    font-size: x-large;
+    max-width: fit-content;
+    padding: 4px 20px 4px 20px;
+    border-radius: 7px;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+.new-expense:hover
+{
+    transition: 500ms;
+    background-color: rgba(49,41,210,0.51);
+}
+.filters
+{
+    color:#505050;
+    margin: 7vw 5vw 7vw 5vw;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filters .datefilter
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    min-width:00px;
+}
+.filters .datefilter div:nth-child(2)
+{
+    margin-left: 10px;
+}
+.filters input[type="date"],.filters select,.filters input[type="date"]:focus,.filters select:focus
+{
+    font-size: large;
+    padding: 4px 12px 4px 12px;
+    color:gray;
+    border: none;
+    box-shadow: 0px 0px 3px lightgray;
+    border-radius: 5px;
+    margin-left: 3vh;
+    outline: none;
+    width:200px;
+}
+@media screen and (max-width:750px)
+{
+    .filters
+    {
+        color:#505050;
+        margin: 7vw 0vw 7vw 5vw;
+        font-size: x-large;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .filters .datefilter
+    {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    .filters .datefilter div:nth-child(2)
+    {
+        margin-left: 0px;
+    }
+    .filters div
+    {
+        margin-bottom: 10px;
+    }
+    .filters div div label,.filters div label
+    {
+        display: flex;
+        flex-direction: row;
+        width:50%;
+        justify-content: space-between;
+    }
+}

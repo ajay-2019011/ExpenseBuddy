@@ -1,0 +1,57 @@
+.chart-weekly
+{
+    padding: 10vw 10vh 10vw 10vh;
+    align-self: center;
+}
+.charts
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1vw 1vh 1vw 1vh;
+    align-self: center;
+}
+.charts div
+{
+    max-width: 47vw;
+}
+.chart-filter
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4vh;
+    margin-bottom: 3vh;   
+}
+.chart-filter select
+{
+    font-size: large;
+    padding: 4px 12px 4px 12px;
+    color:gray;
+    border: none;
+    box-shadow: 0px 0px 3px lightgray;
+    border-radius: 5px;
+    margin-left: 1vh;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+    outline: none;
+    width:200px;
+}
+.chart-container
+{
+    align-self: center;
+}
+@media screen and (max-width:650px) {
+    .chart-weekly
+    {
+        padding: 1vw 1vh 1vw 1vh;
+        align-self: center;
+    }
+    .charts
+    {
+        flex-direction: column;
+    }
+    .charts div
+    {
+        max-width: 95vw;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Expense Manager Application Server",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "Expense",
+    "Manager",
+    "Application",
+    "Server"
+  ],
+  "author": "Abhineet Pandey",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "netlify-lambda": "^2.0.14",
+    "nodemon": "^2.0.12",
+    "serverless-http": "^2.7.0"
+  }
+}

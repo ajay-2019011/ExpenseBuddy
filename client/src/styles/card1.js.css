@@ -1,0 +1,37 @@
+.card1
+{
+    background-color: rgba(29,41,210,0.06);
+    padding: 10px 1vw 10px 1vw;
+    height:28vh;
+    width:45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 25px;
+}
+.card1 h1
+{
+    font-size: 60px;
+    font-weight: normal;
+}
+.card1 h5
+{
+    transition: 500ms;
+    font-weight: bolder;
+    color:#877ABC;
+    cursor:pointer;
+}
+.card1 h5:hover
+{
+    transition: 500ms;
+    color:blueviolet;
+}
+@media screen and (max-width:750px) {
+    .card1
+    {
+        width:90vw;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+}

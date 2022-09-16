@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'rubikBold';
+    src: url('../fonts/Rubik-Bold.ttf')
+}
+@font-face {
+    font-family: 'rubikReg';
+    src: url('../fonts/Rubik-Regular.ttf');
+}
+*{
+    margin:0;
+    font-family: 'rubikReg';
+}

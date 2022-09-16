@@ -1,0 +1,81 @@
+.navbar
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width:100vw;
+    background-color: white;
+    z-index: 1000;
+}
+.navbar img
+{
+    object-fit: contain;
+    height:30px;
+    margin:10px 0px 0px 15px;
+}
+.navbar .menucontainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navbar .menucontainer .menu
+{
+    transition: 750ms;
+    margin:12px 5vw 10px 2vw; 
+    padding:4px 10px 4px 10px;
+    border-radius: 20px;
+    max-height: fit-content;  
+    font-size: large;
+    font-weight: bold;
+    color:#3129D2;
+    cursor:pointer;
+}
+.navbar .menucontainer .menu:hover
+{
+    cursor:pointer;
+    transition: 750ms;
+    color:white;
+    background-color: #3129D2;
+}
+.navbar #logout
+{
+    transition: 750ms;
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    align-content: center;
+    margin:10px 2vw 4px 2vw; 
+    align-items: center;
+    font-size: x-large;
+    padding:4px 10px 4px 10px;
+    height:30px;
+    background-color: #DD4343;
+    color:white;
+    cursor: pointer;
+}
+.navbar #logout:hover
+{
+    transition: 750ms;
+    background-color: #DD4383;
+    box-shadow: 0px 0px 3px gray;
+}
+.menuicon
+{
+    display:none;
+}
+@media screen and (max-width:850px) {
+    .menuicon
+    {
+        display: block;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .navbar #logout
+    {
+        margin-right: 20px;
+    }
+}
