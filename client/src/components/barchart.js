@@ -1,5 +1,5 @@
 import {Bar} from 'react-chartjs-2';
-
+//Barcharts made for more descriptive display
 export default function BarChart(props)
 {
   const properties = {
