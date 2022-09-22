@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-
+//Making models for expense and user
 const Expense=mongoose.Schema({
     index:String,
     uid:String,
